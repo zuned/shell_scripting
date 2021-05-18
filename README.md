@@ -1,30 +1,31 @@
-For Declaring Array
+### For Declaring Array
 	myarr=(one two three four five)
-For Printing One Element 
+### For Printing One Element 
 	echo=${myarr[1]} ## This is will print two
-For Printing All Elements
+### For Printing All Elements
 	echo=${myarr[*]} ## This will remove all Elements
-For Removing Specific Element
+### For Removing Specific Element
 	unset myarr[1] #This will remove the second element
-For Removing All elements
+### For Removing All elements
 	unset myarr    #This will remove all elements
 
 
-echo "Hello $*" ### This will Print all Argument passed 
-echo echo "You are using $(basename $0)" ### This will print the first name from the command which is fileName without space
+### To Print all Argument passed 
+	echo "Hello $*"
+### To print first name from the command which is fileName without space
+	echo echo "You are using $(basename $0)"
 
--- Variable Scope
-export name # The variable will be accessible to other processes
+### Variable Scope
+	export name # The variable will be accessible to other processes
 
-Few Important Commands:
-read -p "May I ask your name: " name
-echo "Hello $name"
-read -sn1 -p "Press any key to continue"
-echo
+### Few Important Commands:
+	read -p "May I ask your name: " name
+	echo "Hello $name"
+	read -sn1 -p "Press any key to continue"
+	echo
+	exit 0
 
-exit 0 ## what does this means
-
-The types of command is listed as follows:
+### The types of command is listed as follows:
 	• Alias
 	• Function
 	• Shell built in
