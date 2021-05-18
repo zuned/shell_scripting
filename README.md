@@ -69,8 +69,12 @@ If we do not add this line, then the commands will be run within the current she
 	read -n1 -p "Press any key to exit"
 	echo
 	exit 0
-	
-**In Above example code will exit with character will be shown on screen. If we want it to happen silently. -s to achieve this.
-
+###  In Above example code will exit with character will be shown on screen. If we want it to happen silently. -s to achieve this.
+	#!/bin/bash
+	read -p "May I ask your name: " name
+	echo "Hello $name"
+	read -sn1 -p "Press any key to exit"
+	echo
+	exit 0
 
 
